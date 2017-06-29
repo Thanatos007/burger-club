@@ -4,26 +4,100 @@
 /*    border-color: #D62F01;*/
 /*}*/
 
+.social-media-pic span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.navbar-brand {
+  background: url("images/burger_club_logo.png") center / contain no-repeat;
+  width: 200px;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.navbar-default .navbar-toggle{
+    border-color:#fff;
+    background-color:transparent;
+}
+button.navbar-toggle{
+    color:#fff;
+    background-color:#fff;
+}
+
+
+body{
+    font-family:'Rubik' !important;
+}
+
 .navbar {
-	background-color: #D62F01;
-    border-color: #D62F01;
+	background-color: #3B3B3B;
+    border-color: #3B3B3B;
+    width:100%;
+    display: table;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	background: #3B3B3B;
+	color: #ffffff;
+	padding: 0;
+}
+.navbar-default .navbar-nav > .active > 
+a,.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav > .active > 
+a, .navbar-default .navbar-nav > .active > 
+a:hover{
+	background: #FF5454;
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.nav > li {
+	border-right: 1px solid rgb(39, 37, 37);
+}
+.nav > li > a {
+	font-size: 13px;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	color:#FFF;
 }
 
-.navbar-nav li a{
-    color: #FFFFFF;
+.navbar-default .navbar-nav > 
+.active > a, .navbar-default
+.navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav > .active 
+> a, .navbar-default .navbar-nav >
+.active > a:hover {
+     background:#D62F01;
+    
 }
-
-
 .navbar-brand {
     color: #FFFFFF;
+}
+.navbar-brand>hover{
+    background:#D62F01;
+    color:#FFF !important;
 }
 
 .jumbotron {
 	padding: 100px;
 	height: 500px;
-	background-image: url(http://ucdintegrativemedicine.com/wp-content/uploads/Aug-21_BurgerDay_Header8CUTFB2_35406006.png)
+	background-image:url("images/background.jpg")!important;
 }
-
 .jumbotron h1{
 	color: #FFFFFF;
 }
@@ -32,6 +106,10 @@
 	margin: 0;
 }
 
+.carousel-inner > .item > img {
+  width:1600px;
+  height:400px;
+}
 .jumbotron .btn {
 	background-color:#D62F01;
 	border-color: #D62F01;
@@ -61,9 +139,10 @@
 
 
 .footer {
-
-    background-color: #D62F01;
+   font-family: "Rubik";
+   background-color: #D62F01;
    border-color: #D62F01;
+   border:5px solid #bd310a;
    padding-top: 20px;
    padding-bottom: 20px;
 
@@ -78,6 +157,7 @@
 }
 img {
     max-width: 100%;
+    height : 550px;
 }
 
 #social ul{
@@ -112,5 +192,102 @@ img {
 }
 
  p {
-    
+     color: white;
+     font-family: 'Rubik', sans-serif;
  }
+ .footer {
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+ food.jpg {
+     width : 100px;
+     height : 100px;
+ }
+ .d-block.img-fluid {
+      width : 100%;
+     height : 375px;
+ }
+ 
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    width : 300px;
+    height : 500px;
+}
+#location-list>p{
+    color:black !important;
+}
+
+.form-control {
+    padding: 10px 16px 10px 16px;
+    outline: none;
+    color: black;
+    font-size: 13px;
+    border: 1px solid rgb(236, 236, 236);
+    background: #FFFFFF;
+    width: 140%;
+    line-height: 22px;
+    position: relative;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+#name-sign {
+    margin-bottom: 10px;
+}
+#email-sign {
+    margin-bottom: 10px;
+}
+#sign-up {
+    color: white;
+    background-color: #333;
+}
+.social-media-pic:hover{
+    color: #fff
+    
+}
+#social li{
+    right:6%;
+    display:inline;
+}
+.col-sm-3 {
+}
+.col-sm-6 {
+    width: 40%;
+    left 30%;
+}
