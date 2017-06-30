@@ -4,14 +4,7 @@
 /*    border-color: #D62F01;*/
 /*}*/
 
-.social-media-pic span:after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+
 .navbar-brand {
   background: url("images/burger_club_logo.png") center / contain no-repeat;
   width: 200px;
@@ -23,6 +16,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    font-family: 'Rubik', sans-serif !important;
 }
 
 .navbar-default .navbar-toggle{
@@ -44,6 +38,7 @@ body{
     border-color: #3B3B3B;
     width:100%;
     display: table;
+    border-bottom:3px solid #2f2d2d
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -65,9 +60,6 @@ a:hover{
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-}
-.nav > li {
-	border-right: 1px solid rgb(39, 37, 37);
 }
 .nav > li > a {
 	font-size: 13px;
@@ -142,7 +134,7 @@ a:hover{
    font-family: "Rubik";
    background-color: #D62F01;
    border-color: #D62F01;
-   border:5px solid #bd310a;
+   border:3px solid #bd310a;
    padding-top: 20px;
    padding-bottom: 20px;
 
@@ -171,13 +163,42 @@ img {
 }
 
 #social li {
-	display:block;
+	display:inline;
     float:left;
     list-style:none;
-    margin:0;
-    padding:0;
     position:relative;
-    right:50%;
+    right:75%;
+}
+#social li span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#social li span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -100px;
+    transition: 0.5s;
+}
+#social li:hover{
+    opacity:0.7 !important;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+#social li:hover span {
+  padding-right: 25px;
+}
+#social:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #social ul li img
@@ -230,6 +251,7 @@ img {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    color:black;
 }
 
 /* The Close Button */
@@ -238,6 +260,11 @@ img {
     float: right;
     font-size: 28px;
     font-weight: bold;
+}
+
+/*Text in modal*/
+#sign-up-modal{
+    color:black;
 }
 
 .close:hover,
@@ -281,13 +308,37 @@ img {
     color: #fff
     
 }
-#social li{
-    right:6%;
-    display:inline;
-}
 .col-sm-3 {
+    left: 1%;
+    margin-right: 40px;
 }
 .col-sm-6 {
     width: 40%;
-    left 30%;
+    left: 20%;
+}
+
+.info-text > p {
+    color: white;
+    background-color:#333;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    border:5px solid #333;
+}
+
+.info-text > h2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.info-text{
+    background-color:#333;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: .5%;
+    padding-bottom: 2%;
+    border:3px solid #2f2d2d;
 }
